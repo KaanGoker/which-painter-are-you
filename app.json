@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "WPY?",
+    "slug": "wpy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1E1B4B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kaangoker.wpy"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#60A5FA"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.kaangoker.wpy",
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "WPY? uses the camera to photograph the picture you want analyzed.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "WPY? needs access to your photos so you can pick a picture to analyze."
+        }
+      ],
+      "expo-secure-store"
+    ]
+  }
+}
